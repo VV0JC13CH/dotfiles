@@ -14,3 +14,7 @@
 	path = .config/nvim
 	url = git@github.com:VV0JC13CH/config-nvim.git
 	branch = main
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot
+	ignore = dirty
