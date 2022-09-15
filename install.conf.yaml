@@ -1,5 +1,6 @@
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - [git submodule foreach git pull origin HEAD, Updating submodules]
 
 - defaults:
     link:
