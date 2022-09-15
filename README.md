@@ -2,12 +2,13 @@
 
 dotfiles for Pop!\_OS
 
-## Installation
+## Clone this repository
 
 ```
-git clone git@github.com:VV0JC13CH/dotfiles.git ~/dotfiles
+git clone git@github.com:VV0JC13CH/dotfiles.git ~/.config/dotfiles
 ```
+## Install configuration
 
 ```
-~/dotfiles/install
+~/.config/dotfiles/install
 ```
