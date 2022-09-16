@@ -1,8 +1,9 @@
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
-  - [git submodule foreach git pull origin HEAD, Updating submodules]
-  - [ln -sf (which fdfind) ~/.local/bin/fd, Link fdfind as fd]
-  - [ln -sf (which batcat) ~/.local/bin/bat, Link batcat as bat]
+  - [git submodule update --init --recursive, Init of submodules]
+  - [git submodule foreach git pull origin HEAD, Update of submodules]
+  - [ln -sf (which fdfind) ~/.local/bin/fd, Link/mark fdfind as fd]
+  - [ln -sf (which batcat) ~/.local/bin/bat, Link/mark batcat as bat]
+  - [nvim --headless +PlugInstall +qall, Install nvim plugins]
 
 - defaults:
     link:
