@@ -1,6 +1,7 @@
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - [git submodule foreach git pull origin HEAD, Updating submodules]
+  - [ln -s (which fdfind) ~/.local/bin/fd, Link fdfind as fd]
 
 - defaults:
     link:
