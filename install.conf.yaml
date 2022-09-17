@@ -22,10 +22,13 @@
       path: .config/alacritty
 
 - shell:
-# - [git submodule update --init --recursive, Init of submodules]
+  - [git submodule update --init --recursive, Init of submodules]
   - [git submodule foreach git pull origin HEAD, Update of submodules]
   - [ln -sf (which fdfind) ~/.local/bin/fd, Link/mark fdfind as fd]
   - [ln -sf (which batcat) ~/.local/bin/bat, Link/mark batcat as bat]
-  - [nvim --headless +PlugInstall +qall, Install nvim plugins]
+  - [nvim --headless +PlugInstall +qall, Check if all nvim plugins are installed]
+  - [nvim --headless +PlugUpdate +qall, Update nvim plugins]
+  - [nvim --headless +CocInstall coc-json coc-html coc-pyright coc-rust-analyzer coc-snippets coc-go coc-tsserver coc-yaml coc-sh +qall, Check if all nvim coc-extensions are installed]
+  - [nvim --headless +CocUpdate +qall, Update nvim coc-extensions]
   - [curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher, Update fish(er)]
   - [fisher update, Install fish plugins]
