@@ -6,3 +6,4 @@
   - [apt install alacritty tmux, Install terminal tools]
   - [apt install fish fzf fd-find bat, Install shell tools]
   - [apt install neovim terraform-ls, Install vim tools]
+  - [apt install ruby-rubygems, Install ruby env]
