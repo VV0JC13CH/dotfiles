@@ -2,7 +2,7 @@
     link:
       relink: true
       create: true
-      force: false
+      force: false 
 
 - clean: ['~']
 
@@ -20,6 +20,8 @@
       path: .config/nvim
     ~/.config/alacritty:
       path: .config/alacritty
+    ~/.var/app/io.gitlab.librewolf-community/.librewolf:
+      path: .config/librewolf
 
 - shell:
   - [git submodule update --init --recursive, Init of submodules]
