@@ -32,3 +32,5 @@
   - [nvim --headless +CocUpdate +qall, Update nvim coc-extensions]
   - [curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher, Update fish(er)]
   - [fisher update, Install fish plugins]
+  - [curl https://sh.rustup.rs -sSf | sh -s -- -y, Setup rust environment]
+  - [set -Ua fish_user_paths $HOME/.cargo/bin, Create path to rust environment]
