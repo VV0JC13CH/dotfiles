@@ -12,6 +12,7 @@
     - ~/.local/share/fonts
 
 - link:
+  # Tools configuration:
     ~/.config/fish:
       path: .config/fish
     ~/.config/tmux:
@@ -22,12 +23,75 @@
       path: .config/alacritty
     ~/.var/app/io.gitlab.librewolf-community/.librewolf:
       path: .config/librewolf
+  # Dotbot plugins:
+    ./plugins/apt.py:
+      path: ./plugins/dotbot-apt/apt.py
+    ./plugins/flatpak.py:
+      path: ./plugins/dotbot-flatpak/flatpak.py
+    ./plugins/git.py:
+      path: ./plugins/dotbot-git/git.py
+    ./plugins/go.py:
+      path: ./plugins/dotbot-golang/go.py
+    ./plugins/pip.py:
+      path: ./plugins/dotbot-pip/pip.py
+    ./plugins/rust.py:
+      path: ./plugins/dotbot-rust/rust.py
+    ./plugins/sudo.py:
+      path: ./plugins/dotbot-sudo/sudo.py
+   # Fzf:
+    ~/.local/bin/fd:
+      path: /usr/bin/fdfind
+    ~/.local/bin/bat:
+      path: /usr/bin/batcat
+
+- git: 
+    './config/alacritty':
+       url: git@github.com:VV0JC13CH/config-alacritty.git
+       branch: main
+       description: Personal alacritty configuration
+    './config/fish':
+       url: git@github.com:VV0JC13CH/config-fish.git
+       branch: main
+       description: Personal fish configuration
+    './config/tmux':
+       url: git@github.com:VV0JC13CH/config-tmux.git
+       branch: main
+       description: Personal tmux configuration
+    './config/nvim':
+       url: git@github.com:VV0JC13CH/config-nvim.git
+       branch: main
+       description: Personal nvim configuration
+
+- sudo:
+  - shell:
+    - [wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | tee /usr/share/keyrings/hashicorp-archive-keyring.gpg, Get hashicorp key]
+    - [cp ./sources.list.d/* /etc/apt/sources.list.d/, Add additional custom repositories]
+    - [add-apt-repository ppa:neovim-ppa/stable -y, Add neovim-ppa]
+  
+  - apt:
+    - gpg
+    # Terminal tools:
+    - alacritty
+    - tmux
+    # Shell tools:
+    - fish
+    - fzf
+    - fd-find
+    - bat
+    # Vim tools:
+    - neovim
+    - terraform-ls
+    # Ruby env
+    - ruby-rubygems
+    # Google translator:
+    - translate-shell
+
+- flatpak:
+  - io.gitlab.librewolf-community
+
 
 - shell:
-  - [git submodule update --init --recursive, Init of submodules]
   - [git submodule foreach git pull origin HEAD, Update of submodules]
-  - [ln -sf (which fdfind) ~/.local/bin/fd, Link/mark fdfind as fd]
-  - [ln -sf (which batcat) ~/.local/bin/bat, Link/mark batcat as bat]
   - [nvim --headless +PlugInstall +qall, Check if all nvim plugins are installed]
   - [nvim --headless +PlugUpdate +qall, Update nvim plugins]
   - [nvim --headless +CocInstall coc-json coc-html coc-pyright coc-groovy coc-rust-analyzer coc-snippets coc-go coc-tsserver coc-yaml coc-sh +qall, Check if all nvim coc-extensions are installed]
@@ -36,4 +100,3 @@
   - [fisher update, Install fish plugins]
   - [curl https://sh.rustup.rs -sSf | sh -s -- -y, Setup rust environment]
   - [set -Ua fish_user_paths $HOME/.cargo/bin, Create path to rust environment]
-  - [flatpak install flathub io.gitlab.librewolf-community, Install LibreWolf]
