@@ -1,0 +1,1 @@
+/home/wojciech/.config/dotfiles/./plugins/dotbot-rust/rust.py
