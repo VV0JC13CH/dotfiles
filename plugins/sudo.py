@@ -1,1 +1,1 @@
-/home/wojciech/.config/dotfiles/./plugins/dotbot-sudo/sudo.py
+dotbot-sudo/sudo.py
