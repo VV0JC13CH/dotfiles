@@ -1,1 +1,1 @@
-/home/wojciech/.config/dotfiles/./plugins/dotbot-flatpak/flatpak.py
+dotbot-flatpak/flatpak.py
