@@ -1,1 +1,1 @@
-/home/wojciech/.config/dotfiles/./plugins/dotbot-pip/pip.py
+dotbot-pip/pip.py
