@@ -1,1 +1,1 @@
-/home/wojciech/.config/dotfiles/./plugins/dotbot-golang/go.py
+dotbot-golang/go.py
