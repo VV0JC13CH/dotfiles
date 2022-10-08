@@ -1,1 +1,1 @@
-/home/wojciech/.config/dotfiles/./plugins/dotbot-git/git.py
+dotbot-git/git.py
