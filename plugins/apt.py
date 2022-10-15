@@ -1,1 +1,1 @@
-dotbot-apt/apt.py
+./dotbot-apt/apt.py
