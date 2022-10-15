@@ -1,1 +1,1 @@
-dotbot-pip/pip.py
+./dotbot-pip/pip.py
