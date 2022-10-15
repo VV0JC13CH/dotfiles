@@ -1,1 +1,1 @@
-dotbot-flatpak/flatpak.py
+./dotbot-flatpak/flatpak.py
