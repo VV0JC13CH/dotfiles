@@ -1,1 +1,1 @@
-./dotbot-git/git.py
+dotbot-git/git.py
