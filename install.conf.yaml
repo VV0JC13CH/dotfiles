@@ -21,8 +21,8 @@
       path: .config/nvim
     ~/.config/alacritty:
       path: .config/alacritty
-    ~/.var/app/io.gitlab.librewolf-community/.librewolf:
-      path: .config/librewolf
+    ~/.var/app/io.gitlab.librewolf-community/.librewolf/librewolf.overrides.cfg:
+      path: .config/librewolf/librewolf.overrides.cfg
    # Fzf:
     ~/.local/bin/fd:
       path: /usr/bin/fdfind
