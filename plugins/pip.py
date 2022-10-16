@@ -1,1 +1,0 @@
-./dotbot-pip/pip.py

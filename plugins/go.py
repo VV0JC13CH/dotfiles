@@ -1,1 +1,0 @@
-./dotbot-golang/go.py

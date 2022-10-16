@@ -1,1 +1,0 @@
-./dotbot-sudo/sudo.py
