@@ -23,21 +23,6 @@
       path: .config/alacritty
     ~/.var/app/io.gitlab.librewolf-community/.librewolf:
       path: .config/librewolf
-  # Dotbot plugins:
-    ./plugins/apt.py:
-      path: ./plugins/dotbot-apt/apt.py
-    ./plugins/flatpak.py:
-      path: ./plugins/dotbot-flatpak/flatpak.py
-    ./plugins/git.py:
-      path: ./plugins/dotbot-git/git.py
-    ./plugins/go.py:
-      path: ./plugins/dotbot-golang/go.py
-    ./plugins/pip.py:
-      path: ./plugins/dotbot-pip/pip.py
-    ./plugins/rust.py:
-      path: ./plugins/dotbot-rust/rust.py
-    ./plugins/sudo.py:
-      path: ./plugins/dotbot-sudo/sudo.py
    # Fzf:
     ~/.local/bin/fd:
       path: /usr/bin/fdfind
