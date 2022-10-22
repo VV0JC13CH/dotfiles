@@ -48,6 +48,7 @@
 - sudo:
   - shell:
     - [wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | tee /usr/share/keyrings/hashicorp-archive-keyring.gpg, Get hashicorp key]
+    - [curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg, Get docker key]
     - [cp ./sources.list.d/* /etc/apt/sources.list.d/, Add additional custom repositories]
     - [add-apt-repository ppa:neovim-ppa/stable -y, Add neovim-ppa]
   
@@ -64,6 +65,12 @@
     # Vim tools:
     - neovim
     - terraform-ls
+    # Docker:
+    - ca-certificates
+    - gnupg
+    - docker-ce
+    - docker-ce-cli
+    - containerd.io
     # Go env
     - golang-go
     # Ruby env
