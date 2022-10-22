@@ -65,7 +65,7 @@
     - neovim
     - terraform-ls
     # Go env
-	- golang-go
+    - golang-go
     # Ruby env
     - ruby-rubygems
     # Google translator:
