@@ -96,4 +96,5 @@
   - [fisher update, Install fish plugins]
   - [curl https://sh.rustup.rs -sSf | sh -s -- -y, Setup rust environment]
   - [set -Ua fish_user_paths $HOME/.cargo/bin, Create path to rust environment]
-  - [cp .config/librewolf/librewolf.overrides.cfg ~/.var/app/io.gitlab.librewolf-community/.librewolf/librewolf.overrides.cfg, Sync librewolf config] 
+  - [cp .config/librewolf/librewolf.overrides.cfg ~/.var/app/io.gitlab.librewolf-community/.librewolf/librewolf.overrides.cfg, Sync librewolf config]
+  - [systemctl --user enable syncthing.service, Ensure syncthing runs in background] 
