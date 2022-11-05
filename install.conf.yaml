@@ -59,10 +59,11 @@
     - alacritty
     - tmux
     # Shell tools:
+    - bat
     - fish
     - fzf
     - fd-find
-    - bat
+    - highlight
     # Vim tools:
     - neovim
     - terraform-ls
