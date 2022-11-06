@@ -81,11 +81,12 @@
     - syncthing
     # Google translator:
     - translate-shell
+    # Python packages:
+    - pipx
 
 - flatpak:
   - io.gitlab.librewolf-community
   - md.obsidian.Obsidian
-
 
 - shell:
   - [git submodule foreach git pull origin HEAD, Update of submodules]
