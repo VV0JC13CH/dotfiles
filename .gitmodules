@@ -18,31 +18,31 @@
 	path = .config/fish
 	url = git@github.com:VV0JC13CH/config-fish.git
 	branch = main
-[submodule "plugins/dotbot-apt"]
+[submodule "./plugins/dotbot-apt"]
 	path = plugins/dotbot-apt
-	url = https://github.com/bryant1410/dotbot-apt
-	branch = main
-[submodule "plugins/dotbot-flatpak"]
+	url = git@github.com:bryant1410/dotbot-apt.git
+	branch = master
+[submodule "./plugins/dotbot-flatpak"]
 	path = plugins/dotbot-flatpak
 	url = https://github.com/DrDynamic/dotbot-flatpak.git
-	branch = main
-[submodule "plugins/dotbot-golang"]
+	branch = master
+[submodule "./plugins/dotbot-golang"]
 	path = plugins/dotbot-golang
 	url = https://github.com/delicb/dotbot-golang
-	branch = main
-[submodule "plugins/dotbot-git"]
+	branch = master
+[submodule "./plugins/dotbot-git"]
 	path = plugins/dotbot-git
 	url = https://github.com/DrDynamic/dotbot-git.git
-	branch = main
-[submodule "plugins/dotbot-rust"]
+	branch = master
+[submodule "./plugins/dotbot-rust"]
 	path = plugins/dotbot-rust
 	url = https://github.com/alexcormier/dotbot-rust
-	branch = main
-[submodule "plugins/dotbot-sudo"]
+	branch = master
+[submodule "./plugins/dotbot-sudo"]
 	path = plugins/dotbot-sudo
 	url = https://github.com/DrDynamic/dotbot-sudo.git
-	branch = main
-[submodule "plugins/dotbot-pip"]
+	branch = master
+[submodule "./plugins/dotbot-pip"]
 	path = plugins/dotbot-pip
 	url = https://github.com/sobolevn/dotbot-pip.git
-	branch = main
+	branch = master

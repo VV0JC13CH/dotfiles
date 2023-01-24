@@ -12,8 +12,10 @@ DOTBOT_BIN="bin/dotbot"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 cd "${BASEDIR}"
-git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
-git submodule update --init --recursive "${DOTBOT_DIR}"
+git submodule sync --quiet --recursive
+git submodule foreach --recursive 'git fetch --tags'
+git submodule update --init --recursive --remote
+git submodule foreach git pull origin HEAD
 
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${PLUGIN_DIR}/${PLUGIN_CONFIG}" "${@}"							# Init dotbot plugins
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" --plugin-dir "${BASEDIR}/${PLUGIN_DIR}/" -c "${CONFIG}" "${@}"     # Configuration
