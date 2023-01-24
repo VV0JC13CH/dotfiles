@@ -89,7 +89,6 @@
   - md.obsidian.Obsidian
 
 - shell:
-  - [git submodule foreach git pull origin HEAD, Update of submodules]
   - [nvim --headless +PlugInstall +qall, Check if all nvim plugins are installed]
   - [nvim --headless +PlugUpdate +qall, Update nvim plugins]
   - [nvim --headless +CocInstall coc-json coc-html coc-pyright coc-groovy coc-rust-analyzer coc-snippets coc-go coc-tsserver coc-yaml coc-sh +qall, Check if all nvim coc-extensions are installed]
