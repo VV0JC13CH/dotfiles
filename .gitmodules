@@ -1,16 +1,16 @@
-[submodule "./config/tmux"]
+[submodule "config/tmux"]
 	path = config/tmux
 	url = git@github.com:VV0JC13CH/config-tmux.git
 	branch = main
-[submodule "./config/alacritty"]
+[submodule "config/alacritty"]
 	path = config/alacritty
 	url = git@github.com:VV0JC13CH/config-alacritty.git
 	branch = main
-[submodule "./config/nvim"]
+[submodule "config/nvim"]
 	path = config/nvim
 	url = git@github.com:VV0JC13CH/config-nvim.git
 	branch = main
-[submodule "./config/fish"]
+[submodule "config/fish"]
 	path = config/fish
 	url = git@github.com:VV0JC13CH/config-fish.git
 	branch = main
@@ -18,31 +18,31 @@
 	path = dotbot
 	url = git@github.com:anishathalye/dotbot.git
 	ignore = dirty
-[submodule "./plugins/dotbot-apt"]
+[submodule "plugins/dotbot-apt"]
 	path = plugins/dotbot-apt
 	url = git@github.com:bryant1410/dotbot-apt.git
 	branch = master
-[submodule "./plugins/dotbot-flatpak"]
+[submodule "plugins/dotbot-flatpak"]
 	path = plugins/dotbot-flatpak
 	url = git@github.com:DrDynamic/dotbot-flatpak.git
 	branch = master
-[submodule "./plugins/dotbot-golang"]
+[submodule "plugins/dotbot-golang"]
 	path = plugins/dotbot-golang
-	url = git@github.com:delicb/dotbot-golang.git	branch = master
+    url = git@github.com:delicb/dotbot-golang.git
     branch = master
-[submodule "./plugins/dotbot-git"]
+[submodule "plugins/dotbot-git"]
 	path = plugins/dotbot-git
 	url = https://github.com/DrDynamic/dotbot-git.git
 	branch = master
-[submodule "./plugins/dotbot-rust"]
+[submodule "plugins/dotbot-rust"]
 	path = plugins/dotbot-rust
-	url = git@github.com:alexcormier/dotbot-rust.git	branch = master
-    branch = master
-[submodule "./plugins/dotbot-sudo"]
+    url = git@github.com:alexcormier/dotbot-rust.git
+    branch= master
+[submodule "plugins/dotbot-sudo"]
 	path = plugins/dotbot-sudo
 	url = git@github.com:DrDynamic/dotbot-sudo.git
 	branch = master
-[submodule "./plugins/dotbot-pip"]
+[submodule "plugins/dotbot-pip"]
 	path = plugins/dotbot-pip
-	url = git@github.com:sobolevn/dotbot-pip.git	branch = master
+	url = git@github.com:sobolevn/dotbot-pip.git
     branch = master
