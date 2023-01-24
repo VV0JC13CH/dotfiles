@@ -1,16 +1,16 @@
-[submodule "config/tmux"]
+[submodule "./config/tmux"]
 	path = config/tmux
 	url = git@github.com:VV0JC13CH/config-tmux.git
 	branch = main
-[submodule "config/alacritty"]
+[submodule "./config/alacritty"]
 	path = config/alacritty
 	url = git@github.com:VV0JC13CH/config-alacritty.git
 	branch = main
-[submodule "config/nvim"]
+[submodule "./config/nvim"]
 	path = config/nvim
 	url = git@github.com:VV0JC13CH/config-nvim.git
 	branch = main
-[submodule ".config/fish"]
+[submodule "./config/fish"]
 	path = config/fish
 	url = git@github.com:VV0JC13CH/config-fish.git
 	branch = main
