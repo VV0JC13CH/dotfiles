@@ -13,14 +13,14 @@
 
 - link:
   # Tools configuration:
-    ~/.config/fish:
-      path: .config/fish
-    ~/.config/tmux:
-      path: .config/tmux
-    ~/.config/nvim:
-      path: .config/nvim
-    ~/.config/alacritty:
-      path: .config/alacritty
+    ~/config/fish:
+      path: config/fish
+    ~/config/tmux:
+      path: config/tmux
+    ~/config/nvim:
+      path: config/nvim
+    ~/config/alacritty:
+      path: config/alacritty
    # Fzf:
     ~/.local/bin/fd:
       path: /usr/bin/fdfind
@@ -28,19 +28,19 @@
       path: /usr/bin/batcat
 
 - git: 
-    './config/alacritty':
+    '/config/alacritty':
        url: git@github.com:VV0JC13CH/config-alacritty.git
        branch: main
        description: Personal alacritty configuration
-    './config/fish':
+    '/config/fish':
        url: git@github.com:VV0JC13CH/config-fish.git
        branch: main
        description: Personal fish configuration
-    './config/tmux':
+    '/config/tmux':
        url: git@github.com:VV0JC13CH/config-tmux.git
        branch: main
        description: Personal tmux configuration
-    './config/nvim':
+    '/config/nvim':
        url: git@github.com:VV0JC13CH/config-nvim.git
        branch: main
        description: Personal nvim configuration
@@ -97,5 +97,5 @@
   - [fisher update, Install fish plugins]
   - [curl https://sh.rustup.rs -sSf | sh -s -- -y, Setup rust environment]
   - [set -Ua fish_user_paths $HOME/.cargo/bin, Create path to rust environment]
-  - [cp .config/librewolf/librewolf.overrides.cfg ~/.var/app/io.gitlab.librewolf-community/.librewolf/librewolf.overrides.cfg, Sync librewolf config]
+  - [cp config/librewolf/librewolf.overrides.cfg ~/.var/app/io.gitlab.librewolf-community/.librewolf/librewolf.overrides.cfg, Sync librewolf config]
   - [systemctl --user enable syncthing.service, Ensure syncthing runs in background] 
