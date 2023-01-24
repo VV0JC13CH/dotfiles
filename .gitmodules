@@ -29,7 +29,7 @@
 [submodule "./plugins/dotbot-golang"]
 	path = plugins/dotbot-golang
 	url = git@github.com:delicb/dotbot-golang.git	branch = master
-    branch - master
+    branch = master
 [submodule "./plugins/dotbot-git"]
 	path = plugins/dotbot-git
 	url = https://github.com/DrDynamic/dotbot-git.git
