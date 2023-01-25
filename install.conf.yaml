@@ -82,6 +82,6 @@
   - [set -Ua fish_user_paths $HOME/.cargo/bin, Create path to rust environment]
   - [systemctl --user enable syncthing.service, Ensure syncthing runs in background] 
   # git confiuration
-  - [git config –global core.defaultbranch “main”, Ensure main is default git branch"]
-  - [git config –global core.editor “vim”, Ensure vim is default git editor"]
-  - [git config –global pull.rebase "true", Ensure git pull.rebase is set to true"]
+  - [git config core.defaultbranch “main”, Ensure main is default git branch"]
+  - [git config core.editor “vim”, Ensure vim is default git editor"]
+  - [git config pull.rebase "true", Ensure git pull.rebase is set to true"]
