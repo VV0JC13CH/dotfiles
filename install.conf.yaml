@@ -35,7 +35,7 @@
     - [curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor --yes -o /usr/share/keyrings/docker.gpg, Get docker key]
     - [curl -s https://syncthing.net/release-key.txt | apt-key add -, Get syncthing key]  
     - [cp ./sources.list.d/* /etc/apt/sources.list.d/, Add additional custom repositories]
-    - [add-apt-repository ppa:neovim-ppa/stable -y, Add neovim-ppa]
+    - [add-apt-repository ppa:neovim-ppa/unstable -y, Add neovim-ppa/unstable]
   
   - apt:
     - gpg
