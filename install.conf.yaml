@@ -21,13 +21,16 @@
       path: config/nvim
     ~/.config/alacritty:
       path: config/alacritty
-
-
    # Fzf:
     ~/.local/bin/fd:
       path: /usr/bin/fdfind
     ~/.local/bin/bat:
       path: /usr/bin/batcat
+
+- git:
+    '~/.config/tmux/plugins/tpm':
+      url: 'https://github.com/tmux-plugins/tpm.git'
+      method: clone-or-pull
 
 - sudo:
   - shell:
