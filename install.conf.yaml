@@ -46,11 +46,7 @@
     - alacritty
     - tmux
     # Shell tools:
-    - bat
     - fish
-    - fzf
-    - fd-find
-    - highlight
     # Vim tools:
     - neovim
     - terraform-ls
@@ -70,8 +66,14 @@
     - translate-shell
     # Python packages:
     - pipx
-    # rnvimr
+    # Vim plugins:
     - ranger
+    - fzf
+    - fd-find
+    - bat
+    - highlight
+    # Tmux plugins:
+    - urlview
 
 - pip:
     file: requirements.txt
