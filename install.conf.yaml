@@ -96,7 +96,9 @@
 - shell:
   # Librewolf
   - [cp ./config/librewolf/librewolf.overrides.cfg ~/.var/app/io.gitlab.librewolf-community/.librewolf/librewolf.overrides.cfg, Update config of Librewolf]
-  #nvim
+  # tmux
+  - [python3 -m ranger_tmux --no-tmux install, Integrate ranger and tmux] 
+  #nvim:q
   - [nvim --headless +PlugInstall +qall, Check if all nvim plugins are installed]
   - [nvim --headless +PlugUpdate +qall, Update nvim plugins]
   #fish
