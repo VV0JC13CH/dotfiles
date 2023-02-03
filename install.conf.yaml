@@ -13,14 +13,16 @@
 
 - link:
   # Tools configuration:
+    ~/.config/alacritty:
+      path: config/alacritty
     ~/.config/fish:
       path: config/fish
     ~/.config/tmux:
       path: config/tmux
+    ~/.config/ranger:
+      path: config/ranger
     ~/.config/nvim:
       path: config/nvim
-    ~/.config/alacritty:
-      path: config/alacritty
    # Fzf:
     ~/.local/bin/fd:
       path: /usr/bin/fdfind
