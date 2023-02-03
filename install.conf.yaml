@@ -30,8 +30,13 @@
       path: /usr/bin/batcat
 
 - git:
+    #Tmux plugins:
     '~/.config/tmux/plugins/tpm':
-      url: 'https://github.com/tmux-plugins/tpm.git'
+      url: 'git@github.com:tmux-plugins/tpm.git'
+      method: clone-or-pull
+    #Ranger plugins
+    '~/.config/ranger/plugins/ranger_tmux':
+      url: 'git@github.com:joouha/ranger_tmux.git'
       method: clone-or-pull
 
 - sudo:
