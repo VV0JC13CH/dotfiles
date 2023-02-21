@@ -46,3 +46,6 @@
 	path = plugins/dotbot-pip
 	url = git@github.com:sobolevn/dotbot-pip.git
     branch = master
+[submodule "plugins/dotbot-npm"]
+	path = plugins/dotbot-npm
+	url = git@github.com:ameliagapin/dotbot-npm.git
