@@ -65,6 +65,8 @@
     - containerd.io
     # Go env
     - golang-go
+    # Lua environment:
+    - lua5.4
     # Ruby env
     - ruby-rubygems
     # Sync:
