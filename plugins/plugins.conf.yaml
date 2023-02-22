@@ -22,3 +22,5 @@
       path: ./plugins/dotbot-npm/npm.py
     ./plugins/sudo.py:
       path: ./plugins/dotbot-sudo/sudo.py
+    ./plugins/snap.py:
+      path: ./plugins/dotbot-snap/snap.py

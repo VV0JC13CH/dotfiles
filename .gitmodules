@@ -49,3 +49,6 @@
 [submodule "plugins/dotbot-npm"]
 	path = plugins/dotbot-npm
 	url = git@github.com:ameliagapin/dotbot-npm.git
+[submodule "plugins/dotbot-snap"]
+	path = plugins/dotbot-snap
+	url = https://github.com/DrDynamic/dotbot-snap.git

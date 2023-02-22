@@ -69,6 +69,8 @@
     - lua5.4
     # Ruby env
     - ruby-rubygems
+    # Snap:
+    - snap
     # Sync:
     - syncthing
     # Google translator:
@@ -90,6 +92,9 @@
     user: true    # Like --user
     stdout: false # Print the execution stdout
     stderr: true  # Print the execution stderr
+
+- snap:
+  - k9s
 
 - flatpak:
   - io.gitlab.librewolf-community
