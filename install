@@ -22,7 +22,7 @@ echo '[4/7] git submodule fetch'
 git submodule foreach --recursive --quiet 'git fetch --tags' --quiet
 echo '[5/7] git submodule pull'
 git submodule foreach --recursive --quiet 'git pull origin HEAD' --quiet
-echo '[6/7] create links to dotbot plugins'
+echo '[6/7] setup plugins'
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${PLUGIN_DIR}/${PLUGIN_CONFIG}" "${@}"							# Init dotbot plugins
 echo '[7/7] install configuration'
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" --plugin-dir "${BASEDIR}/${PLUGIN_DIR}/" -c "${CONFIG}" "${@}"     # Configuration
