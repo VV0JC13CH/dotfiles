@@ -125,3 +125,4 @@
 - cargo:
   - zoxide:
     - locked
+  - tmux-sessionizer
