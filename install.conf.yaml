@@ -46,6 +46,7 @@
     - [curl -s https://syncthing.net/release-key.txt | apt-key add -, Get syncthing key]  
     - [cp ./sources.list.d/* /etc/apt/sources.list.d/, Add additional custom repositories]
     - [add-apt-repository ppa:neovim-ppa/unstable -y, Add neovim-ppa/unstable]
+    - [add-apt-repository ppa:fish-shell/release-3 -y, Add fish-ppa]
   
   - apt:
     - gpg
