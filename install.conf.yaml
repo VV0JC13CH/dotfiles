@@ -93,9 +93,6 @@
     stdout: false # Print the execution stdout
     stderr: true  # Print the execution stderr
 
-- snap:
-  - k9s
-
 - flatpak:
   - io.gitlab.librewolf-community
   - md.obsidian.Obsidian
@@ -117,6 +114,13 @@
   #syncthing
   - [systemctl --user enable syncthing.service, Ensure syncthing runs in background] 
   # git confiuration
-  - [git config core.defaultbranch “main”, Ensure main is default git branch"]
-  - [git config core.editor “vim”, Ensure vim is default git editor"]
-  - [git config pull.rebase "true", Ensure git pull.rebase is set to true"]
+  - [git config core.defaultbranch “main”, Ensure main is default git branch]
+  - [git config core.editor “vim”, Ensure vim is default git editor]
+  - [git config pull.rebase "true", Ensure git pull.rebase is set to true]
+
+- snap:
+  - k9s
+
+- cargo:
+  - zoxide:
+    - locked
