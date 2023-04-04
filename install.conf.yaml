@@ -38,6 +38,10 @@
     '~/.config/ranger/plugins/ranger_tmux':
       url: 'git@github.com:joouha/ranger_tmux.git'
       method: clone-or-pull
+    #Fzf installer script
+    '~/.config/fzf/':
+      url: 'git@github.com:junegunn/fzf.git'
+      method: clone-or-pull
 
 - sudo:
   - shell:
@@ -114,6 +118,8 @@
   - [curl https://sh.rustup.rs -sSf | sh -s -- -y, Setup rust environment]
   #syncthing
   - [systemctl --user enable syncthing.service, Ensure syncthing runs in background] 
+  #fzf update
+  - [~/.config/fzf/install --completion --no-key-bindings --update-rc]
   # git confiuration
   - [git config core.defaultbranch “main”, Ensure main is default git branch]
   - [git config core.editor “vim”, Ensure vim is default git editor]
