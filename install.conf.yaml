@@ -44,7 +44,7 @@
       method: clone-or-pull
     #Omf installer script
     '~/.local/omf/':
-      url: 'git@github.com:junegunn/fzf.git'
+      url: 'git@github.com:oh-my-fish/oh-my-fish.git'
       method: clone-or-pull
 
 - sudo:
