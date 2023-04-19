@@ -119,6 +119,7 @@
   #fish
   - [curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher, Update fisher]
   - [~/.local/omf/bin/install --offline --yes --noninteractive --config=~/.config/omf/, Update omf]
+  - [omf update, Install/Update omf plugins]
   - [fisher update, Install fish plugins]
   #rust
   - [set -Ua fish_user_paths $HOME/.cargo/bin, Create path to rust environment]
