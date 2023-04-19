@@ -111,10 +111,11 @@
   - [nvim --headless +PlugInstall +qall, Check if all nvim plugins are installed]
   - [nvim --headless +PlugUpdate +qall, Update nvim plugins]
   #fish
-  - [curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher, Update fish(er)]
+  - [curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher, Update fisher]
+  - [curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish, Update Oh My Fish]
   - [fisher update, Install fish plugins]
-  - [set -Ua fish_user_paths $HOME/.cargo/bin, Create path to rust environment]
   #rust
+  - [set -Ua fish_user_paths $HOME/.cargo/bin, Create path to rust environment]
   - [curl https://sh.rustup.rs -sSf | sh -s -- -y, Setup rust environment]
   #syncthing
   - [systemctl --user enable syncthing.service, Ensure syncthing runs in background] 
