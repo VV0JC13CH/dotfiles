@@ -23,8 +23,6 @@
       path: config/tmux
     ~/.config/ranger:
       path: config/ranger
-    ~/.config/nvim:
-      path: config/nvim
    # Fzf:
     ~/.local/bin/fd:
       path: /usr/bin/fdfind
@@ -32,6 +30,10 @@
       path: /usr/bin/batcat
 
 - git:
+    #NvChad:
+    '~/.config/nvim':
+      url: 'https://github.com/NvChad/NvChad.git'
+      method: clone-or-pull
     #Tmux plugins:
     '~/.config/tmux/plugins/tpm':
       url: 'git@github.com:tmux-plugins/tpm.git'
