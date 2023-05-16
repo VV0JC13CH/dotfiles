@@ -114,7 +114,7 @@
 
 - shell:
   # alacritty
-  - [/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh)", Install JetBrainsMono font]
+  - [/bin/bash -c "wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip && unzip -o JetBrainsMono.zip -d ~/.local/share/fonts/ && rm -f JetBrainsMono.zip", Install JetBrainsMono font]
   # Librewolf
   - [cp ./config/librewolf/librewolf.overrides.cfg ~/.var/app/io.gitlab.librewolf-community/.librewolf/librewolf.overrides.cfg, Update config of Librewolf]
   # tmux
