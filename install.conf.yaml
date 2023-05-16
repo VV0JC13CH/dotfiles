@@ -19,6 +19,8 @@
       path: config/fish
     ~/.config/omf:
       path: config/fish/omf
+    ~/.config/nvim/lua/custom:
+      path: config/nvim
     ~/.config/tmux:
       path: config/tmux
     ~/.config/ranger:
