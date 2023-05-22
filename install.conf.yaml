@@ -139,3 +139,4 @@
   - zoxide:
     - locked
   - tmux-sessionizer
+  - leetup
