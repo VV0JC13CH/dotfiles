@@ -92,6 +92,7 @@
     - ranger
     - fzf
     - fd-find
+    - ripgrep
     - bat
     - highlight
     # Tmux plugins:
