@@ -23,6 +23,8 @@
       path: config/nvim
     ~/.config/tmux:
       path: config/tmux
+    ~/.urlview:
+      path: config/tmux/scripts/urlview
     ~/.config/ranger:
       path: config/ranger
    # Fzf:
