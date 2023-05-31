@@ -146,7 +146,7 @@
   - leetup
 - go:
   - package:
-    - github.com/ankitpokhrel/jira-cli
+    - github.com/ankitpokhrel/jira-cli/cmd/jira@latest
     flags: [-v, -u]
     stdout: true
     stderr: true
