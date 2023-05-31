@@ -144,3 +144,9 @@
     - locked
   - tmux-sessionizer
   - leetup
+- go:
+  - package:
+    - github.com/ankitpokhrel/jira-cli
+    flags: [-v, -u]
+    stdout: true
+    stderr: true
