@@ -120,7 +120,7 @@
   # tmux
   - [python3 -m ranger_tmux install, Integrate ranger and tmux (create symlink for plugin)] 
   #fish
-  - [curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher, Update fisher]
+  - [curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/HEAD/functions/fisher.fish | source && fisher install jorgebucaran/fisher, Update fisher]
   - [~/.local/omf/bin/install --offline --yes --noninteractive --config=~/.config/omf/, Update omf]
   - [omf update, Install/Update omf plugins]
   - [fisher update, Install fish plugins]
@@ -135,6 +135,8 @@
   - [git config core.defaultbranch “main”, Ensure main is default git branch]
   - [git config core.editor “vim”, Ensure vim is default git editor]
   - [git config pull.rebase "true", Ensure git pull.rebase is set to true]
+  # jira-cli
+  - [go install github.com/ankitpokhrel/jira-cli/cmd/jira@latest, Install jira-cli]
 
 - snap:
   - k9s
@@ -144,9 +146,3 @@
     - locked
   - tmux-sessionizer
   - leetup
-- go:
-  - package:
-    - github.com/ankitpokhrel/jira-cli/cmd/jira@latest
-    flags: [-v, -u]
-    stdout: true
-    stderr: true
