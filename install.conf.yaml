@@ -82,6 +82,7 @@
     - golang-go
     # Lua environment:
     - lua5.4
+    - luarocks
     # Ruby env
     - ruby-rubygems
     # Snap:
