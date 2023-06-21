@@ -83,6 +83,7 @@
     # Lua environment:
     - lua5.4
     - luarocks
+    - lua-basted
     # Ruby env
     - ruby-rubygems
     # Snap:
