@@ -61,6 +61,7 @@
     - [cp ./sources.list.d/* /etc/apt/sources.list.d/, Add additional custom repositories]
     - [add-apt-repository ppa:neovim-ppa/unstable -y, Add neovim-ppa/unstable]
     - [add-apt-repository ppa:fish-shell/release-3 -y, Add fish-ppa]
+    - [snap install k9s --edge --devmode, Install k9s]
   
   - apt:
     - gpg
@@ -104,6 +105,13 @@
     # Tmux plugins:
     - urlview
 
+  - cargo:
+    - zoxide:
+      - locked
+    - tmux-sessionizer
+    - leetup
+    - kubie
+
 - pip:
     file: requirements.txt
     binary: /usr/bin/pip
@@ -145,10 +153,3 @@
 
 - snap:
   - k9s
-
-- cargo:
-  - zoxide:
-    - locked
-  - tmux-sessionizer
-  - leetup
-  - kubie
