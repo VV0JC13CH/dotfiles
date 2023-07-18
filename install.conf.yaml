@@ -105,12 +105,6 @@
     # Tmux plugins:
     - urlview
 
-  - cargo:
-    - zoxide:
-      - locked
-    - tmux-sessionizer
-    - leetup
-    - kubie
 
 - pip:
     file: requirements.txt
@@ -153,3 +147,12 @@
 
 - snap:
   - k9s
+
+
+- cargo:
+  - zoxide:
+    - locked
+  - tmux-sessionizer
+  - leetup
+  - kubie
+
