@@ -153,6 +153,5 @@
   - zoxide:
     - locked
   - tmux-sessionizer
-  - leetup
   - kubie
-
+  - cargo-clean-all
