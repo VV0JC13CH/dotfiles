@@ -107,6 +107,8 @@
     # Tmux plugins:
     - urlview
 
+  - npm:
+      - tldr
 
 - pip:
     file: requirements.txt
@@ -149,9 +151,6 @@
 
 - snap:
   - k9s
-
-- npm:
-    - tldr
 
 - cargo:
   - zoxide:
