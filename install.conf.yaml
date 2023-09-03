@@ -89,6 +89,9 @@
     - lua-busted
     # Ruby env
     - ruby-rubygems
+    - ruby-dev
+    - zlib1g-dev 
+    - liblzma-dev
     # Snap:
     - snap
     # Sync:
