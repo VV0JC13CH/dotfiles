@@ -141,6 +141,7 @@
   #rust
   - [set -Ua fish_user_paths $HOME/.cargo/bin, Create path to rust environment]
   - [curl https://sh.rustup.rs -sSf | sh -s -- -y, Setup rust environment]
+  - [curl https://marketplace.visualstudio.com/_apis/public/gallery/publishers/vadimcn/vsextensions/vscode-lldb/1.9.2/vspackage --create-dirs -o ~/.local/share/vscode-lldb, Setup debugger]
   #syncthing
   - [systemctl --user enable syncthing.service, Ensure syncthing runs in background] 
   #fzf update
@@ -158,6 +159,7 @@
 - go:
   # dap-go:
   - github.com/go-delve/delve/cmd/dlv@latest
+  - github.com/ankitpokhrel/jira-cli/cmd/jira@latest
 
 - cargo:
   - zoxide:
