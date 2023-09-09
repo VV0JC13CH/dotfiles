@@ -155,6 +155,10 @@
 - snap:
   - k9s
 
+- go:
+  # dap-go:
+  - github.com/go-delve/delve/cmd/dlv@latest
+
 - cargo:
   - zoxide:
     - locked
