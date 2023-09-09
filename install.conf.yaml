@@ -152,14 +152,10 @@
   - [git config pull.rebase "true", Ensure git pull.rebase is set to true]
   # jira-cli
   - [go install github.com/ankitpokhrel/jira-cli/cmd/jira@latest, Install jira-cli]
+  - [go install github.com/go-delve/delve/cmd/dlv@latest, Install delve]
 
 - snap:
   - k9s
-
-- go:
-  # dap-go:
-  - github.com/go-delve/delve/cmd/dlv@latest
-  - github.com/ankitpokhrel/jira-cli/cmd/jira@latest
 
 - cargo:
   - zoxide:
