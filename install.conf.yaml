@@ -142,10 +142,7 @@
   - [set -Ua fish_user_paths $HOME/.cargo/bin, Create path to rust environment]
   - [curl https://sh.rustup.rs -sSf | sh -s -- -y, Setup rust environment]
   #rust-debugging
-  - [curl -L https://github.com/vadimcn/vscode-lldb/releases/download/v1.9.2/codelldb-x86_64-linux.vsix --create-dirs -o ~/.local/share/codelldb/codelldb-x86_64-linux.zip, Download codelldb]
-  - [cd ~/.local/share/codelldb && unzip codelldb-x86_64-linux.zip extension/adapter/* extension/lldb/*, Unzip lldb]
-  - [cd ~/.local/share/codelldb && mv extension/ codelldb_adapter, Configure LLDB]
-  - [cd ~/.local/share/codelldb && ln -s $(pwd)/codelldb_adapter/adapter/codelldb ~/.local/bin/codelldb, Symlink to LLDB]
+  - [curl -L https://github.com/vadimcn/vscode-lldb/releases/download/v1.9.2/codelldb-x86_64-linux.vsix --create-dirs -o ~/.local/share/codelldb/codelldb-x86_64-linux.zip && cd ~/.local/share/codelldb && unzip -u codelldb-x86_64-linux.zip && mkdir ./codelldb_adapter && cp -r ./extension/* ./codelldb_adapter && ln -sf $(pwd)/codelldb_adapter/adapter/codelldb ~/.local/bin/codelldb, Configure codelldb]
   #syncthing
   - [systemctl --user enable syncthing.service, Ensure syncthing runs in background] 
   #fzf update
