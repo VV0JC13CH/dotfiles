@@ -8,6 +8,8 @@
   # Dotbot plugins:
     ./plugins/apt.py:
       path: ./plugins/dotbot-apt/apt.py
+    ./plugins/brew.py:
+      path: ./plugins/dotbot-brew/brew.py
     ./plugins/flatpak.py:
       path: ./plugins/dotbot-flatpak/flatpak.py
     ./plugins/git.py:

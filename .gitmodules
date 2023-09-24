@@ -54,3 +54,6 @@
 	path = plugins/dotbot-snap
 	url = git@github.com:DrDynamic/dotbot-snap.git
     branch = master
+[submodule "plugins/dotbot-brew"]
+	path = plugins/dotbot-brew
+	url = https://github.com/d12frosted/dotbot-brew.git
