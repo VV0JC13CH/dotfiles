@@ -160,6 +160,12 @@
 - snap:
   - k9s
 
+- tap:
+  - yakitrak/yakitrak
+
+- brew:
+  - yakitrak/yakitrak/obs
+
 - cargo:
   - zoxide:
     - locked
