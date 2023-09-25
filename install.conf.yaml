@@ -56,7 +56,7 @@
 
 - sudo:
   - shell:
-    - [yes | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)", Install brew]
+    - [curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash, Install brew]
     - [wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | tee /usr/share/keyrings/hashicorp-archive-keyring.gpg, Get hashicorp key]
     - [curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor --yes -o /usr/share/keyrings/docker.gpg, Get docker key]
     - [curl -s https://syncthing.net/release-key.txt | apt-key add -, Get syncthing key]  
