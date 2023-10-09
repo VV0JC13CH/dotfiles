@@ -124,6 +124,7 @@
 
 - flatpak:
   - io.gitlab.librewolf-community
+  - com.github.tchx84.Flatseal      # Librewolf->Devices->All devices
   - md.obsidian.Obsidian
 
 - shell:
