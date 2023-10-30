@@ -111,6 +111,8 @@
     - exuberant-ctags
     # Tmux plugins:
     - urlview
+    # Sync clouds:
+    - rclone
 
   - npm:
       - tldr
