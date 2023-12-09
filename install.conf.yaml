@@ -169,8 +169,6 @@
 - brew:
   - hub
   - yakitrak/yakitrak/obs
-  - jenkins-x/jx/jx
-
 
 - cargo:
   - zoxide:
