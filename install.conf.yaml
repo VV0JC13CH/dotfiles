@@ -169,6 +169,7 @@
 - brew:
   - hub
   - yakitrak/yakitrak/obs
+  - jesseduffield/lazygit/lazygit
 
 - cargo:
   - zoxide:
