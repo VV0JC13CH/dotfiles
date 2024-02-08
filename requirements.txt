@@ -2,3 +2,4 @@ ranger-fm
 ranger-tmux
 debugpy
 pynvim
+usb_resetter
