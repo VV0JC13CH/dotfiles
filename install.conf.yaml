@@ -170,6 +170,7 @@
   - hub
   - yakitrak/yakitrak/obs
   - jesseduffield/lazygit/lazygit
+  - spotify-tui
 
 - cargo:
   - zoxide:
