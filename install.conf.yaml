@@ -129,15 +129,12 @@
     stderr: true  # Print the execution stderr
 
 - flatpak:
-  - io.gitlab.librewolf-community
   - com.github.tchx84.Flatseal      # Librewolf->Devices->All devices
   - md.obsidian.Obsidian
 
 - shell:
   # alacritty
   - [/bin/bash -c "wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip && unzip -o JetBrainsMono.zip -d ~/.local/share/fonts/ && rm -f JetBrainsMono.zip", Install JetBrainsMono font]
-  # Librewolf
-  - [cp ./config/librewolf/librewolf.overrides.cfg ~/.var/app/io.gitlab.librewolf-community/.librewolf/librewolf.overrides.cfg, Update config of Librewolf]
   - [xdg-settings get default-web-browser, Update default browser in terminal]
   # tmux
   - [python3 -m ranger_tmux install, Integrate ranger and tmux (create symlink for plugin)] 
