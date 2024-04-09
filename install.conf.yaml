@@ -58,6 +58,7 @@
   - shell:
     - [curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash, Install brew]
     - [wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | tee /usr/share/keyrings/hashicorp-archive-keyring.gpg, Get hashicorp key]
+    - [wget -q https://packages.mozilla.org/apt/repo-signing-key.gpg -O- | gpg --dearmor | tee /etc/apt/trusted.gpg.d/packages.mozilla.org.gpg, Get mozilla key]
     - [curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor --yes -o /usr/share/keyrings/docker.gpg, Get docker key]
     - [curl -s https://syncthing.net/release-key.txt | apt-key add -, Get syncthing key]  
     - [cp ./sources.list.d/* /etc/apt/sources.list.d/, Add additional custom repositories]
@@ -73,6 +74,9 @@
     - exa
     # Shell tools:
     - fish
+    # Mozilla browsers
+    - firefox
+    - firefox-nightly
     # Vim tools:
     - neovim
     - terraform-ls
