@@ -2,3 +2,5 @@ ranger-fm
 ranger-tmux
 debugpy
 pynvim
+keyring
+browser-cookie3
