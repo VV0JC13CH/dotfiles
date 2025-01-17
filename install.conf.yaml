@@ -9,6 +9,7 @@
 
 - create:
     - ~/Projects
+    - ~/Projects/LLM/ollama_models
     - ~/Sandbox
     - ~/.local/share/fonts
 
