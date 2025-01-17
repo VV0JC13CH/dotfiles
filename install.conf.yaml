@@ -66,6 +66,7 @@
     - [add-apt-repository ppa:neovim-ppa/unstable -y, Add neovim-ppa/unstable]
     - [add-apt-repository ppa:fish-shell/release-3 -y, Add fish-ppa]
     - [snap install k9s --edge --devmode, Install k9s]
+    - [curl -fsSL https://ollama.com/install.sh | sh, Install ollama]
   
   - apt:
     - gpg
@@ -121,6 +122,12 @@
 
   - npm:
       - tldr
+
+  - link:
+    - /usr/share/ollama/.ollama/models:
+      path: ~/Projects/LLM/ollama_models
+
+
 
 - pip:
     file: requirements.txt
