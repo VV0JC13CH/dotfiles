@@ -67,6 +67,7 @@
     - [add-apt-repository ppa:fish-shell/release-3 -y, Add fish-ppa]
     - [snap install k9s --edge --devmode, Install k9s]
     - [curl -fsSL https://ollama.com/install.sh | sh, Install ollama]
+    - [bash -c "./scripts/setup_ollama.sh $(whoami)", Setup ollama]
   
   - apt:
     - gpg
