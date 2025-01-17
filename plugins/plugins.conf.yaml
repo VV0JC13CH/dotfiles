@@ -22,6 +22,9 @@
       path: ./plugins/dotbot-rust/rust.py
     ./plugins/npm.py:
       path: ./plugins/dotbot-npm/npm.py
+    # Fix sudo plugin:
+    ./dotbot/bin/dotbot:
+      path: ./dotbot/src/bin/dotbot
     ./plugins/sudo.py:
       path: ./plugins/dotbot-sudo/sudo.py
     ./plugins/snap.py:
