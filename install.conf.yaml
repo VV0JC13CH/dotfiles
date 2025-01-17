@@ -153,11 +153,13 @@
   - [systemctl --user enable syncthing.service, Ensure syncthing runs in background] 
   #fzf update
   - [~/.config/fzf/install --completion --no-key-bindings --update-rc]
-  # git confiuration
+  # git configuration
   - [git config core.defaultbranch “main”, Ensure main is default git branch]
   - [git config core.editor “vim”, Ensure vim is default git editor]
   - [git config pull.rebase "true", Ensure git pull.rebase is set to true]
-  # jira-cli
+  # golang
+    # jira-cli
+  - [/bin/bash -c "./scripts/update_golang.sh", Install latest golang]
   - [go install github.com/ankitpokhrel/jira-cli/cmd/jira@latest, Install jira-cli]
   - [go install github.com/go-delve/delve/cmd/dlv@latest, Install delve]
 
