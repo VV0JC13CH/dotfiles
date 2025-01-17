@@ -1,5 +1,5 @@
-ranger-fm
-ranger-tmux
+ranger_fm
+ranger_tmux
 debugpy
 pynvim
 keyring
