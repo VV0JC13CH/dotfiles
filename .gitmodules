@@ -57,3 +57,6 @@
 [submodule "plugins/dotbot-brew"]
 	path = plugins/dotbot-brew
 	url = https://github.com/d12frosted/dotbot-brew.git
+[submodule "config/zellij"]
+	path = config/zellij
+	url = git@github.com:VV0JC13CH/config-zellij.git
